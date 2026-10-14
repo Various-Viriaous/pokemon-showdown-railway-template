@@ -36,4 +36,4 @@ RUN chmod +x /app/start.sh \
 
 ENV PORT=8000
 EXPOSE 8000
-CMD ["/app/start.sh"]
+CMD node build && /app/start.sh
